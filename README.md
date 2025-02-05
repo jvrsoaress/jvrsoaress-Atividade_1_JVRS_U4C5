@@ -3,7 +3,7 @@
 
 ## Objetivo do Projeto
 
-O objetivo deste projeto é implementar um semáforo utilizando o microcontrolador Raspberry Pi Pico W, empregando a função add_repeating_timer_ms() do Pico SDK para criar um temporizador periódico. O semáforo terá temporização de 3 segundos para cada alteração de sinal (vermelho, azul e verde), controlando 3 LEDs (vermelho, amarelo e verde) com resistores de 330 Ω. O foco é aplicar a técnica de temporização e controlar os LEDs de forma eficiente, utilizando o Raspberry Pi Pico W como base para a simulação de um semáforo.
+O objetivo deste projeto é implementar um semáforo utilizando o microcontrolador Raspberry Pi Pico W, empregando a função add_repeating_timer_ms() do Pico SDK para criar um temporizador periódico. O semáforo terá temporização de 3 segundos para cada alteração de sinal (vermelho, azul (substituindo o amarelo) e verde), controlando 3 LEDs (vermelho, azul (substituindo o amarelo) e verde) com resistores de 330 Ω. O foco é aplicar a técnica de temporização e controlar os LEDs de forma eficiente, utilizando o Raspberry Pi Pico W como base para a simulação de um semáforo.
 
 ## 🗒️ Lista de requisitos
 
@@ -16,9 +16,9 @@ O objetivo deste projeto é implementar um semáforo utilizando o microcontrolad
 ## 🛠 Tecnologias
 
 - **Microcontrolador:** Raspberry Pi Pico W  
-- **LEDs:**  
+- **LEDs:** RGB (Vermelho, Verde, Azul)  
   - 1x LED Vermelho  
-  - 1x LED Amarelo  
+  - 1x LED Azul (substituindo o amarelo do semáforo)
   - 1x LED Verde  
 - **Resistores:** 3x Resistores de 330 Ω  
 - **Ferramenta de Simulação:** Wokwi  
@@ -28,7 +28,7 @@ O objetivo deste projeto é implementar um semáforo utilizando o microcontrolad
 ## 🔧 Funcionalidades Implementadas:
 
 1. **Inicialização no vermelho:** O semáforo começa no estado vermelho.
-2. **Alternância automática:** A cada 3 segundos, o semáforo muda para a próxima cor (vermelho → amarelo → verde).
+2. **Alternância automática:** A cada 3 segundos, o semáforo muda para a próxima cor (vermelho → azul → verde).
 3. **Feedback no terminal:** A cada mudança de estado, uma mensagem é exibida no terminal indicando a cor atual.
 4. **Simulação no Wokwi:** O projeto pode ser simulado no Wokwi.
 
